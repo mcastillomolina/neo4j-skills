@@ -102,10 +102,10 @@ Compute and write configuration for all Neo4j Graph Analytics for Snowflake algo
 
 | Parameter | Type | Default | Description |
 |---|---|---|---|
-| `resultProperty` | String | `'k1coloring'` | Node property written back |
+| `resultProperty` | String | `'color'` | Node property written back |
 | `maxIterations` | Integer | 10 | Max iterations |
 
-**Write:** `nodeLabel`, `nodeProperty` (default `'k1coloring'`), `outputTable`
+**Write:** `nodeLabel`, `nodeProperty` (default `'color'`), `outputTable`
 
 **Note:** Greedy; not guaranteed optimal or conflict-free. Result JSON `didConverge: false` → neighbours may share a color; raise `maxIterations`. Ignores weights. Color IDs arbitrary; only inequality between neighbours is meaningful. Supports directed and undirected.
 
